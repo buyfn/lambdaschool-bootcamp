@@ -42,5 +42,5 @@ def substract(minuend, subtrahend):
 @app.route('/favoritefoods')
 def favoritefoods():
     foodlist = ['meat', 'bread', 'hummus']
-    return jsonify(foodlist)
+    return jsonify(results = foodlist)
 
