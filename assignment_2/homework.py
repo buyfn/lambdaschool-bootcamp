@@ -26,7 +26,7 @@ def index():
 
 # 1
 @app.route('/sum/<augend>/<addend>')
-def sum(augend, addend):
+def add(augend, addend):
     return str(int(augend) + int(addend))
 
 # 2
