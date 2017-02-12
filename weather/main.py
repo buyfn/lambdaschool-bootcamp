@@ -7,7 +7,7 @@ url = 'http://api.openweathermap.org/data/2.5/weather?appid=932101dce842f87527ba
 
 @app.route('/')
 def index():
-    return "Let's talk bout weather"
+    return "Put a city in the url, like so: <a href="ignat.pythonanywhere.com/london">ignat.pythonanywhere.com/london</a>"
 
 @app.route('/<cityname>')
 def city(cityname):
