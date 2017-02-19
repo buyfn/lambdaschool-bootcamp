@@ -1,3 +1,26 @@
 body {
     font-size: 16px;
+    margin: 20px 30px;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    padding: 6px 10px 8px 10px;
+    margin-top: 6px;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    border: none;
+    font-size: 18px;
+    padding: 8px 12px 10px 12px;
+    background-color: rgb(55, 255, 130);
+}
+input[type="submit"]:hover {
+    background-color: rgb(95, 255, 170);
+}
+
+label {
+    display: block;
+    margin: 8px 0;
 }

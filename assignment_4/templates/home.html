@@ -6,21 +6,35 @@
 
     <body>
         <h1>IMDB (Ignat's movie database)</h1>
+
+        <div id="add">
         <h2>Add a movie</h2>
         <form action="{{ url_for('movie') }}" method="POST">
-            Name<br>
-            <input type="text" name="name"><br>
-            Year<br>
-            <input type="text" name="year"><br>
-            Rating<br>
-            <input type="text" name="rating"><br>
-            <input type="submit" value="submit">
-        </form>
+            <label>Name<br>
+                <input type="text" name="name">
+            </label>
 
+            <label>Year<br>
+                <input type="text" name="year">
+            </label>
+
+            <label>Rating<br>
+                <input type="text" name="rating">
+            </label>
+
+            <input type="submit" value="Add movie">
+        </form>
+        </div>
+
+        <div id="search">
         <h2>Search a movie</h2>
         <form action="{{ url_for('search') }}" method="GET">
-            Name
-            <input type="text" name="name">
+            <label>
+                Name<br>
+                <input type="text" name="name">
+            </label>
+            <input type="submit" value="Search">
         </form>
+        </div>
     </body>
 </html>
